@@ -20,7 +20,7 @@ var calculatorCtrl = calculator.controller('calculatorCtrl', function($scope){
     };
   }
 
-  
+
   // Add number to input
   $scope.newNumber = function(clickedNumber){
     // if number is clicked, add to input
@@ -80,4 +80,9 @@ var calculatorCtrl = calculator.controller('calculatorCtrl', function($scope){
     $scope.calculate();
     $scope.displayValue = $scope.answer
   }
+
+  // Add decimal to number in input field
+  // $scope.addFloat = function(){
+  //   $scope
+  // }
 });

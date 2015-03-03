@@ -13,7 +13,7 @@
           2
         %button.round{"ng-click" => "newNumber(3)"}
           3
-        %button.round{"ng-click" => "reset()"}
+        %button.round.info{"ng-click" => "reset()"}
           C
         %br
       .row
@@ -23,8 +23,8 @@
           5
         %button.round{"ng-click" => "newNumber(6)"}
           6
-        %button.round{"ng-click" => "multiply()"} 
-          *
+        %button.round.info{"ng-click" => "multiply()"}
+          x
         %br
       .row  
         %button.round{"ng-click" => "newNumber(7)"}
@@ -33,12 +33,13 @@
           8
         %button.round{"ng-click" => "newNumber(9)"}
           9
-        %button.round{"ng-click" => "divide()"} /
+        %button.round.info{"ng-click" => "divide()"} &divide;
         %br
       .row
         %button.round{"ng-click" => "newNumber(0)"}
           0
-        %button.round{"ng-click" => "addition()"}
+        %button.round.info{"ng-click" => "addition()"}
           +
-        %button.round{"ng-click" => "subtraction()"} -
-        %button.round{"ng-click" => "showTotal()"} =
+        %button.round.info{"ng-click" => "subtraction()"} -
+        %button.round.info{"ng-click" => "showTotal()"} =
+        / %button.round.info{"ng-click" => "newNumber(.)"} .
