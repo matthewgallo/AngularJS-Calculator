@@ -1,3 +1,28 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.border {
+  border: 2px solid blue;
+}
+
+h1,
+button {
+  font-family: 'Poiret One'
+}
+
+// button {
+//   font-weight: 900;
+// }
+
+.numbers {
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+// .displayValue {
+//   font-family: 'Poiret One';
+//   font-size: 32px;
+// }

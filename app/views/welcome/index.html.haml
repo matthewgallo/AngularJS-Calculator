@@ -1,45 +1,44 @@
-%h1
-  Cool Calculator
 %div{ 'ng-controller': 'calculatorCtrl' }
-  %input{"ng-model" => "displayValue"}
-  %p
-    / {{ displayValue }}
-  %button.button{"ng-click" => "newNumber(1)"}
-    1
-  %button{"ng-click" => "newNumber(2)"}
-    2
-  %button{"ng-click" => "newNumber(3)"}
-    3
-  %br
-  %button{"ng-click" => "newNumber(4)"}
-    4
-  %button{"ng-click" => "newNumber(5)"}
-    5
-  %button{"ng-click" => "newNumber(6)"}
-    6
-  %br
-  %button{"ng-click" => "newNumber(7)"}
-    7
-  %button{"ng-click" => "newNumber(8)"}
-    8
-  %button{"ng-click" => "newNumber(9)"}
-    9
-  %button{"ng-click" => "reset()"}
-    C
-  %br
-  %button{"ng-click" => "newNumber(0)"}
-    0
-  %button{"ng-click" => "addition()"}
-    +
-  %button{"ng-click" => "subtraction()"} -
-  %button{"ng-click" => "multiply()"} 
-    *
-  %button{"ng-click" => "divide()"} /
-  %button{"ng-click" => "showTotal()"} =
-
-
-
-
-  / {{ $scope.mathstuff }}
-  / {{ $scope.answer }}
-  / {{ $scope.displayValue }}
+  .row
+    .large-10.small-10.columns.text-center
+      %h1
+        Cool Calculator
+      %input.numbers{"ng-model" => "displayValue"}
+        %br
+        %br
+      .row 
+        %button.round{"ng-click" => "newNumber(1)"}
+          1
+        %button.round{"ng-click" => "newNumber(2)"}
+          2
+        %button.round{"ng-click" => "newNumber(3)"}
+          3
+        %button.round{"ng-click" => "reset()"}
+          C
+        %br
+      .row
+        %button.round{"ng-click" => "newNumber(4)"}
+          4
+        %button.round{"ng-click" => "newNumber(5)"}
+          5
+        %button.round{"ng-click" => "newNumber(6)"}
+          6
+        %button.round{"ng-click" => "multiply()"} 
+          *
+        %br
+      .row  
+        %button.round{"ng-click" => "newNumber(7)"}
+          7
+        %button.round{"ng-click" => "newNumber(8)"}
+          8
+        %button.round{"ng-click" => "newNumber(9)"}
+          9
+        %button.round{"ng-click" => "divide()"} /
+        %br
+      .row
+        %button.round{"ng-click" => "newNumber(0)"}
+          0
+        %button.round{"ng-click" => "addition()"}
+          +
+        %button.round{"ng-click" => "subtraction()"} -
+        %button.round{"ng-click" => "showTotal()"} =
